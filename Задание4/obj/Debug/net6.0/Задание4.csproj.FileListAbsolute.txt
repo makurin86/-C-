@@ -3,3 +3,13 @@ C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Зада
 C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\Задание4.AssemblyInfoInputs.cache
 C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\Задание4.AssemblyInfo.cs
 C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\Задание4.csproj.CoreCompileInputs.cache
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\bin\Debug\net6.0\Задание4.exe
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\bin\Debug\net6.0\Задание4.deps.json
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\bin\Debug\net6.0\Задание4.runtimeconfig.json
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\bin\Debug\net6.0\Задание4.dll
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\bin\Debug\net6.0\Задание4.pdb
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\Задание4.dll
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\refint\Задание4.dll
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\Задание4.pdb
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\Задание4.genruntimeconfig.cache
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задание4\obj\Debug\net6.0\ref\Задание4.dll

@@ -9,18 +9,18 @@ int numA = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите B:");
 int numB = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Введите B:");
+Console.WriteLine("Введите C:");
 int numC = int.Parse(Console.ReadLine());
 
 if (numA>numB)
 {
     if (numA>numC)
     {
-        Console.Write("Наибольшее число - A);
+        Console.Write("Наибольшее число - A");
     }
     else
     {
-        Console.Write("Наибольшее число - C);
+        Console.Write("Наибольшее число - C");
     }
     
 }
@@ -28,10 +28,10 @@ else
 {
     if (numB>numC)
     {
-        Console.Write("Наибольшее число - B);
+        Console.Write("Наибольшее число - B");
     }
     else
     {
-        Console.Write("Наибольшее число - C);
+        Console.Write("Наибольшее число - C");
     }
 }
