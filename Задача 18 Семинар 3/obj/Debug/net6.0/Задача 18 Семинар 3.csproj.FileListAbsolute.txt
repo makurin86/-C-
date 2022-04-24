@@ -1,0 +1,15 @@
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.csproj.AssemblyReference.cache
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.AssemblyInfoInputs.cache
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.AssemblyInfo.cs
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.csproj.CoreCompileInputs.cache
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\bin\Debug\net6.0\Задача 18 Семинар 3.exe
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\bin\Debug\net6.0\Задача 18 Семинар 3.deps.json
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\bin\Debug\net6.0\Задача 18 Семинар 3.runtimeconfig.json
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\bin\Debug\net6.0\Задача 18 Семинар 3.dll
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\bin\Debug\net6.0\Задача 18 Семинар 3.pdb
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.dll
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\refint\Задача 18 Семинар 3.dll
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.pdb
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\Задача 18 Семинар 3.genruntimeconfig.cache
+C:\Users\MAK\Desktop\Учеба\Домашнее задание по C#\Задача 18 Семинар 3\obj\Debug\net6.0\ref\Задача 18 Семинар 3.dll
