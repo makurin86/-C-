@@ -15,7 +15,7 @@ int x2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите координаты второй точки (y2)");
 int y2 = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Введите координаты третей точки (z2)");
+Console.WriteLine("Введите координаты второй точки (z2)");
 int z2 = int.Parse(Console.ReadLine());
 
 
