@@ -14,6 +14,6 @@ if (B<=0 || (B*10%10)>0)
 else
 {
  int result = (int)Math.Pow(A,B);
- Console.WriteLine($"A в степение В = {result}");
+ Console.WriteLine($"A в степение В = {result}"); 
 }
     
