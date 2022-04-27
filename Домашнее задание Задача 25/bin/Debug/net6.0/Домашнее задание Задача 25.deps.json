@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Домашнее задание Задача 25/1.0.0": {
+        "runtime": {
+          "Домашнее задание Задача 25.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Домашнее задание Задача 25/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
