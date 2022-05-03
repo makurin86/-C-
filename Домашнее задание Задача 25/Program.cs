@@ -17,3 +17,9 @@ else
  Console.WriteLine($"A в степение В = {result}"); 
 }
     
+//for (int i = 0; i < 3; i++)
+//{
+//    Console.Write(i);
+//}
+// Output:
+// 012
