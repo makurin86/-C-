@@ -5,7 +5,7 @@ void FillArray(double[]array)
 {
     for (int i=0; i<array.Length; i++)
     {
-        array[i] = new Random().Next(-100,100);
+        array[i] = new Random().Next(-100,100)+new Random().NextDouble();
     }
 }
 
@@ -14,7 +14,7 @@ void PrintArray(double[] array)
     for (int i=0; i<array.Length; i++)
     {
         
-        Console.Write(array[i] + " ");
+        Console.Write(Math.Round(array[i],2) + " ; ");
         
     }
 }
@@ -39,6 +39,6 @@ for (int i = 0; i < mass.Length; i++)
     }
 }
 
-Console.WriteLine($"Максимальный элемент массива = {max}, Минимальный элемент массива = {min}");
-Console.WriteLine($"Разница между максимальным и минимальным элементами массива: {max-min}");
+Console.WriteLine($"Максимальный элемент массива = {Math.Round(max,2)}, Минимальный элемент массива = {Math.Round(min,2)}");
+Console.WriteLine($"Разница между максимальным и минимальным элементами массива: {Math.Round(max-min,2)}");
 Console.WriteLine();
