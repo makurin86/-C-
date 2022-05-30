@@ -2,62 +2,55 @@
 которая заменяет строки на столбцы. В случае, если это
 невозможно, программа должна вывести сообщение для
 пользователя. */
-Console.WriteLine("Введите количество строк в массиве");
-int m = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов в массиве");
-int n = int.Parse(Console.ReadLine());
-int[,]mass = new int[m,n];
+
+int m = 4;
+int n = 4;
+int A = 0;
+int B = 10;
 int save = 0;
-void FillArray (int[,] mass)
-{ 
+int[,]mass = new int[m,n];
+
+void FillArray( int [,]mass)
+{
+    
     for (int i = 0; i < mass.GetLength(0); i++)
-{
-    for (int j = 0; j < mass.GetLength(1); j++)
     {
-        mass[i,j] = new Random().Next(0,10);
+     for (int j = 0; j < mass.GetLength(1); j++)
+    {   
+        mass[i,j] = new Random().Next(A, B);
     }
-}
-}
-void Print (int[,] mass)
+   
+}}
+void Print(int [,] mass)
 {
-for (int i = 0; i < mass.GetLength(0); i++)
-{
-    for (int j = 0; j < mass.GetLength(1); j++)
+    for (int i = 0; i < mass.GetLength(0); i++)
     {
-        Console.Write(mass[i,j]+" ");
+        for (int j = 0; j < mass.GetLength(1); j++)
+    {
+
+        Console.Write(mass[i,j] + "  ");
     }
     Console.WriteLine();
-}
-Console.WriteLine();
-}
+}}
 FillArray(mass);
 Print(mass);
-
 Console.WriteLine();
 
-if (mass.GetLength(0)!=mass.GetLength(1))
+if (mass.GetLength(0) != mass.GetLength(1))
 {
-    Console.WriteLine("Заменить строки со столбцами не возможно");
+    Console.WriteLine("Заменить строки со столбцами невозможно");
 }
 else
 {
-    for (int i = 0; i < mass.GetLength(0);i++)
+    for (int i=0; i<mass.GetLength(0); i++)
     {
-        for (int j = 0; j < mass.GetLength(1); j++)
-        {
-            save = mass[i,j]; //присваиваем новое значение save
-            mass[i,j] = mass[j,i]; //отправляем в массив новые значения, меняя местами адреса строк и столбцов
-            mass[j,i] = save;  // обновляем значения массива из save
-               
-        }
-        } 
-}
-for (int i = 0; i < mass.GetLength(0); i++)
-{
-    for (int j = 0; j < mass.GetLength(1); j++)
+     for (int j=i; j<mass.GetLength(1); j++)
     {
-        Console.Write(mass[j,i]+" ");
+        save = mass[i,j];
+        mass[i,j] = mass[j,i];
+        mass[j,i] = save;
+    }   
+
     }
-    Console.WriteLine();
+    Print(mass);
 }
-Console.WriteLine();

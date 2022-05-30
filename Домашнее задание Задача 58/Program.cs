@@ -1,87 +1,71 @@
 ﻿/* Задача 58: Задайте две матрицы. Напишите программу, которая будет
-находить произведение двух матриц. */
-Console.WriteLine("Введите количество строк");
-int m = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов");
-int n = int.Parse(Console.ReadLine());
-int[,]mass = new int[m,n];
-int[,]mass2 = new int[m,n];
-int[,]temp = new int[m,n];
-int[,]temp2 = new int[m,n];
-int[,]result = new int[m,n];
+находить произведение двух матриц.
+ */
+ 
+Console.WriteLine("Введите число строк матрицы А");
+int m1 = int.Parse(Console.ReadLine()); //Строки
+Console.WriteLine("Введите число строк матрицы А");
+int n1 = int.Parse(Console.ReadLine()); //Столбцы
+Console.WriteLine("Введите число строк матрицы Б");
+int n2 = int.Parse(Console.ReadLine()); //Строки
+Console.WriteLine("Введите число строк матрицы Б");
+int m2 = int.Parse(Console.ReadLine()); //Столбцы
 
-void FillArray (int[,] mass)
+int A = 0; //Числа массива начинаются от
+int B = 10; // Числа массива заканчиваются
+
+void FillArray( int [,]mass)
+{
+    
+    for (int i = 0; i < mass.GetLength(0); i++)
+    {
+     for (int j = 0; j < mass.GetLength(1); j++)
+    {   
+        mass[i,j] = new Random().Next(A, B);
+    }
+   
+}}
+void Print(int [,] mass)
 {
     for (int i = 0; i < mass.GetLength(0); i++)
     {
         for (int j = 0; j < mass.GetLength(1); j++)
-        {
-            mass[i,j] = new Random().Next(-10, 10);
-        }
-    }
-}
-void Print (int[,] mass)
-{
-    for (int i = 0; i < mass.GetLength(0); i++)
     {
-        for (int j = 0; j < mass.GetLength(1); j++)
-        {
-            Console.Write (mass[i,j]+ "  ");
-        }
-        Console.WriteLine();
+
+        Console.Write(mass[i,j] + "  ");
     }
-}
+    Console.WriteLine();
+}}
+
+int[,] mass = new int[m1, n1];
+int[,] mass2 = new int[m2, n2];
+int[,] mass3 = new int[m1, n2];
 FillArray(mass);
+FillArray(mass2);
+Console.WriteLine("Матрица А:");
 Print(mass);
 Console.WriteLine();
-FillArray(mass2);
+Console.WriteLine("Матрица Б:");
 Print(mass2);
-/* 
-for (int i = 0; i < mass.GetLength(0); i++)
-   {
-   for (int j = 0; j < mass.GetLength(1); j++)
-   {
-        for (int k = 0; k < mass2.GetLength(0); k++)
-   {
-   for (int l = 0; l < mass2.GetLength(1); l++)
-   {
-            temp[j,i]=mass[i,j]*mass2[i,j];
-   }}}}
-//      for (int l = 0; l < mass2.GetLength(1); l++)
-   {
-//Console.Write(mass[i,j]+ " "+ mass2[j,i]+ " ");
-    //   temp2[l,k]=mass[k,l]*mass2[l,k];
-       //temp[l,j]=mass[l,j]+mass2[l,j];
-       } */
-       
-          {
-            for (int i = 0; i < n; i++)
-                for (int j = 0; j < n; j++)
-                    for (int k = 0; k < n; k++)
-                        result[i, j] += mass[i, k]*mass2[k, j];
+Console.WriteLine();
 
-            return result;
-        }
-
-
-/* 
-            for (int i = 0; i < mass2.GetLength(1); i++)
+if (mass.GetLength(1) != mass2.GetLength(0))
+{
+    Console.WriteLine("Количество столбцов матрицы А должно быть равно количеству строк матрицы Б");
+}
+else
+{
+    for (int i = 0; i < mass3.GetLength(0); i++) //Проходит по строкам итогового массива 
+    {
+        for (int j = 0; j < mass3.GetLength(1); j++)  //Проходит по столбцам итогового массива
+        {
+            for (int k = 0; k < mass.GetLength(1); k++) //Проходит по стобцам первого массива
             {
-                for (int j = 0; j < mass2.GetLength(0); j++)
-                {
-                    temp[i, j] = 0;
-                    for (int k = 0; k < mass2.GetLength(0); k++)
-                    {
-                        Console.Write(mass[i, k]+ " ");
-                        Console.WriteLine();
-                        Console.Write(mass[k, j]+ " ");
-                        Console.WriteLine();
-                        temp[i, j] += mass[i, k] * mass2[k, j];
-                    }
-                }
+                mass3[i,j] += mass[i, k] * mass2[k, j]; //Итоговому массиву присваивается значение суммы произведений массивов по индексу k
+            //НЕУЖЕЛИ ЗАРАБОТАЛО!!!!!!!ааааааааааа
             }
-            
-       Console.WriteLine(); */
-Print(temp);
-      Console.WriteLine();
-Print(temp2);
+        }
+    }
+    Console.WriteLine("Результат умножения матриц А и Б:");
+    Print(mass3);
+}

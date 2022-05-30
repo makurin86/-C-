@@ -2,42 +2,43 @@
 которая поменяет местами первую и последнюю строку
 массива. */
 
-int m = 6;
-int n = 7;
+int m = 4;
+int n = 4;
+int A = 0;
+int B = 10;
 int[,]mass = new int[m,n];
 
-for (int i = 0; i < mass.GetLength(0); i++)
+void FillArray( int [,]mass)
 {
-    for (int j = 0; j < mass.GetLength(1); j++)
-    {
-        mass[i,j] = new Random().Next(0,10);
-    }
-}
-for (int i = 0; i < mass.GetLength(0); i++)
-{
-    for (int j = 0; j < mass.GetLength(1); j++)
-    {
-        Console.Write(mass[i,j]+ " ");
-    }
-    Console.WriteLine();
-}
-Console.WriteLine();
-for (int j = 0; j < mass.GetLength(1); j++)
-    { 
-       Console.Write(mass[mass.GetLength(0)-1,j] + " ");
-    }
-    Console.WriteLine();
-for (int i = 1; i < mass.GetLength(0)-1; i++)
-{
-    for (int j = 0; j < mass.GetLength(1); j++)
-    {
-        Console.Write(mass[i,j]+ " ");
-    }
-    Console.WriteLine();
-    }
     
-    for (int j = 0; j < mass.GetLength(1); j++)
-    { 
-        Console.Write(mass[0,j]+ " ");
+    for (int i = 0; i < mass.GetLength(0); i++)
+    {
+     for (int j = 0; j < mass.GetLength(1); j++)
+    {   
+        mass[i,j] = new Random().Next(A, B);
+    }
+   
+}}
+void Print(int [,] mass)
+{
+    for (int i = 0; i < mass.GetLength(0); i++)
+    {
+        for (int j = 0; j < mass.GetLength(1); j++)
+    {
+
+        Console.Write(mass[i,j] + "  ");
     }
     Console.WriteLine();
+}}
+FillArray(mass);
+Print(mass);
+Console.WriteLine();
+//Console.WriteLine(mass.GetLength(0));
+int save = 0;
+for (int j=0; j< mass.GetLength(1); j++)
+{
+    save = mass[0,j];
+    mass[0,j] = mass[mass.GetLength(0)-1,j];
+     mass[mass.GetLength(0)-1,j] = save;
+}
+Print(mass);
