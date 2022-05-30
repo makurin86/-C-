@@ -1,0 +1,40 @@
+﻿/* Задача 64: Задайте значения M и N. Напишите программу, которая выведет все
+натуральные числа в промежутке от M до N.
+M = 1; N = 5. -> "1, 2, 3, 4, 5"
+M = 4; N = 8. -> "4, 6, 7, 8" */
+Console.WriteLine("Введите число А");
+int A = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число B");
+int B = int.Parse(Console.ReadLine());
+Console.WriteLine();
+void Rec(int M, int N, bool P)
+{
+    if (M>N-1)
+    {
+        P=true;
+    if(N>M)
+    {
+        
+        return;
+    }
+    Console.Write(N+ " ");
+    Rec(M, N+1,P);
+    
+    }
+    else{
+        if (P==false)
+        {
+       
+        if(N<=M-1)
+    {
+        
+        return;
+    }
+    Console.Write(N+ " ");
+    Rec(M, N-1,P);
+    ;
+    }
+    
+    }
+}
+Rec(A,B,false);
