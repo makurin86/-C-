@@ -7,11 +7,12 @@ Console.WriteLine("Введите числа А, В, С:");
 int a = int.Parse(Console.ReadLine());
 int b = int.Parse(Console.ReadLine());
 int c = int.Parse(Console.ReadLine());
-if (a+b>c&& a+c>b&& b+c>a)
+if (a + b > c && a + c > b && b + c > a)
 {
     Console.WriteLine("Такой треугольник может существовать");
 }
-else{
-    
+else
+{
+
     Console.WriteLine("Такой треугольник не может существовать");
 }

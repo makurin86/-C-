@@ -12,9 +12,9 @@ int numB = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите C:");
 int numC = int.Parse(Console.ReadLine());
 
-if (numA>numB)
+if (numA > numB)
 {
-    if (numA>numC)
+    if (numA > numC)
     {
         Console.Write("Наибольшее число - A");
     }
@@ -22,11 +22,11 @@ if (numA>numB)
     {
         Console.Write("Наибольшее число - C");
     }
-    
+
 }
 else
 {
-    if (numB>numC)
+    if (numB > numC)
     {
         Console.Write("Наибольшее число - B");
     }

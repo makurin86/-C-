@@ -8,27 +8,27 @@ Console.WriteLine("Введите число N");
 int N = int.Parse(Console.ReadLine());
 Console.WriteLine();
 int save = 0;
-if (N>M)
+if (N > M)
 {
-int Rec(int M, int N)
-{
-    if(M==N+1)
-       return 0;
-       return M + Rec(M+1, N);
-       
-}
-save = Rec(M,N);
+    int Rec(int M, int N)
+    {
+        if (M == N + 1)
+            return 0;
+        return M + Rec(M + 1, N);
+
+    }
+    save = Rec(M, N);
 }
 else
 {
-int Rec(int N, int M)
-{
-    if(N==M+1)
-       return 0;
-       return N + Rec(N+1, M);
-       
-}
-save = Rec(N,M);
+    int Rec(int N, int M)
+    {
+        if (N == M + 1)
+            return 0;
+        return N + Rec(N + 1, M);
+
+    }
+    save = Rec(N, M);
 }
 
 Console.WriteLine($"Сумма элементов от M до N = {save}");

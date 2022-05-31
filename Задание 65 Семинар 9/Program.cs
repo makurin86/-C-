@@ -6,11 +6,11 @@ M = 4; N = 8 -> "4, 6, 7, 8" */
 
 void Rec(int N, int n)
 {
-    if(n>N)
+    if (n > N)
     {
         return;
     }
-    Console.Write(n+ " ");
-    Rec(N, n+1);
+    Console.Write(n + " ");
+    Rec(N, n + 1);
 }
-Rec(5,1);
+Rec(5, 1);

@@ -3,10 +3,10 @@ Console.WriteLine("Введите число А");
 
 int A = int.Parse(Console.ReadLine());
 int sum = 0;
-for (int index=1; index <=A; index++)
+for (int index = 1; index <= A; index++)
 {
-    sum +=index;
- //   Console.WriteLine(index+" ");
+    sum += index;
+    //   Console.WriteLine(index+" ");
 }
 //Console.WriteLine(A);
 Console.WriteLine($"Сумма чисел от 1 до {A} равна {sum}");

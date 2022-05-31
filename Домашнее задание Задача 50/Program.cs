@@ -16,12 +16,12 @@ int count = 0;
 Console.WriteLine("Введите искомое  в массиве значение");
 int find = int.Parse(Console.ReadLine());
 Console.WriteLine();
-int[,]mass = new int[m,n];
+int[,] mass = new int[m, n];
 for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        mass[i,j] = new Random().Next(0,10);
+        mass[i, j] = new Random().Next(0, 10);
     }
 }
 
@@ -29,7 +29,7 @@ for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        Console.Write(mass[i,j]+ " ");
+        Console.Write(mass[i, j] + " ");
     }
     Console.WriteLine();
 }
@@ -39,14 +39,14 @@ for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        if (mass[i,j]==find)
+        if (mass[i, j] == find)
         {
             Console.WriteLine($"Искомое значение {find}, находится в позиции {i}, {j}");
             count++;
         }
-        }
     }
-if (count==0)
+}
+if (count == 0)
 {
     Console.WriteLine($"Искомое значение {find}, в заданном массиве отсутствует");
 }

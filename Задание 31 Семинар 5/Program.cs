@@ -4,28 +4,28 @@
 //Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма
 //положительных чисел равна 29, сумма отрицательных равна -20.
 int[] array = new int[12];
-for (int i=0; i<array.Length; i++)
+for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(-9,9);
+    array[i] = new Random().Next(-9, 9);
 }
 Console.WriteLine();
-for (int i=0; i<array.Length; i++)
+for (int i = 0; i < array.Length; i++)
 {
-    Console.Write(array[i] +" ");
+    Console.Write(array[i] + " ");
 }
 Console.WriteLine();
 int summNeg = 0;
 int summPos = 0;
 
-for (int i=0; i<array.Length; i++)
+for (int i = 0; i < array.Length; i++)
 {
-    if (array[i]<0)
+    if (array[i] < 0)
     {
-        summNeg +=array[i];
+        summNeg += array[i];
     }
     else
     {
-        summPos +=array[i];
+        summPos += array[i];
     }
 }
 

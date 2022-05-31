@@ -9,7 +9,7 @@ int numA = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите B:");
 int numB = int.Parse(Console.ReadLine());
 
-if (numA>numB)
+if (numA > numB)
 {
     Console.Write("Наибольшее число - A, наименьшее - В");
 }

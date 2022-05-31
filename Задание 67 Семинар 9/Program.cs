@@ -5,10 +5,10 @@
 
 int Rec(int n)
 {
-    if(n==0)
-       return 0;
-       return (n%10) + Rec(n/10);
-       
+    if (n == 0)
+        return 0;
+    return (n % 10) + Rec(n / 10);
+
 }
 int save = Rec(777);
 Console.WriteLine(save);

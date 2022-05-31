@@ -9,32 +9,33 @@ int B = int.Parse(Console.ReadLine());
 Console.WriteLine();
 void Rec(int M, int N, bool P)
 {
-    if (M>N-1)
+    if (M > N - 1)
     {
-        P=true;
-    if(N>M)
-    {
-        
-        return;
-    }
-    Console.Write(N+ " ");
-    Rec(M, N+1,P);
-    
-    }
-    else{
-        if (P==false)
+        P = true;
+        if (N > M)
         {
-       
-        if(N<=M-1)
+
+            return;
+        }
+        Console.Write(N + " ");
+        Rec(M, N + 1, P);
+
+    }
+    else
     {
-        
-        return;
-    }
-    Console.Write(N+ " ");
-    Rec(M, N-1,P);
-    ;
-    }
-    
+        if (P == false)
+        {
+
+            if (N <= M - 1)
+            {
+
+                return;
+            }
+            Console.Write(N + " ");
+            Rec(M, N - 1, P);
+            ;
+        }
+
     }
 }
-Rec(A,B,false);
+Rec(A, B, false);

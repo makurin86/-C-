@@ -5,10 +5,10 @@ Console.WriteLine("Введите число N");
 int N = int.Parse(Console.ReadLine());
 int num = 1;
 
-for (int i=1; i<=N; i++)
+for (int i = 1; i <= N; i++)
 {
 
     num *= i;
-   // Console.WriteLine(num);
+    // Console.WriteLine(num);
 }
- Console.WriteLine($"Произведение чисел от 1 до {N} = {num}");
+Console.WriteLine($"Произведение чисел от 1 до {N} = {num}");

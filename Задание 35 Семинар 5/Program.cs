@@ -6,23 +6,23 @@
 //[1, 2, 3, 6, 2] -> 0
 //[10, 11, 12, 13, 14] -> 5
 
-void Print( int[]arr)
+void Print(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write(arr[i]+ " ");
+        Console.Write(arr[i] + " ");
     }
 }
 
-int [] mass = new int[123];
+int[] mass = new int[123];
 int index = 0;
 
 for (int i = 0; i < mass.Length; i++)
 {
-    mass[i]=new Random().Next(-100,100);
-    if (mass[i]>=10 & mass[i]<=99)
+    mass[i] = new Random().Next(-100, 100);
+    if (mass[i] >= 10 & mass[i] <= 99)
     {
-        index = index+1;
+        index = index + 1;
     }
 }
 Print(mass);

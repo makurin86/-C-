@@ -9,8 +9,8 @@ Console.WriteLine("Заполните массив:");
 int count = 0;
 for (int i = 0; i < Size; i++)
 {
-    array[i]= int.Parse(Console.ReadLine());
-    if (array[i]>0)
+    array[i] = int.Parse(Console.ReadLine());
+    if (array[i] > 0)
     {
         count++;
     }

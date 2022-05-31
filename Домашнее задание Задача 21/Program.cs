@@ -19,7 +19,7 @@ Console.WriteLine("Введите координаты второй точки (
 int z2 = int.Parse(Console.ReadLine());
 
 
-int kvadr = (int)Math.Pow(x1-x2,2) + (int)Math.Pow(y1-y2,2)+ (int)Math.Pow(z1-z2,2);
+int kvadr = (int)Math.Pow(x1 - x2, 2) + (int)Math.Pow(y1 - y2, 2) + (int)Math.Pow(z1 - z2, 2);
 double lenth = Math.Sqrt(kvadr);
 
 Console.WriteLine($"Длина отрезка между точками {lenth}");

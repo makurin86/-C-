@@ -8,12 +8,12 @@ int num1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число:");
 int num2 = int.Parse(Console.ReadLine());
 
-if (num1%num2==0)
+if (num1 % num2 == 0)
 {
     Console.WriteLine($"Число {num1} кратно числу {num2}");
 }
 else
 {
     Console.WriteLine($"Число {num1} не кратно числу {num2}");
-    Console.WriteLine($"Остаток от деления:{num1%num2}");
+    Console.WriteLine($"Остаток от деления:{num1 % num2}");
 }

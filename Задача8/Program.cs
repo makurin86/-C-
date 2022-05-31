@@ -7,12 +7,12 @@ int numN = int.Parse(Console.ReadLine());
 
 int count = 0;
 
-while(count <= numN)
+while (count <= numN)
 {
-    if (count%2==0)
+    if (count % 2 == 0)
     {
         Console.Write(count);
         Console.Write(", ");
     }
-count++;
+    count++;
 }

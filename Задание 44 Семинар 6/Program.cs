@@ -9,11 +9,11 @@ int sum = 0;
 
 Console.WriteLine("Введите число N:");
 int N = int.Parse(Console.ReadLine());
-    Console.Write(a1 + " " + a2+ " ");
+Console.Write(a1 + " " + a2 + " ");
 for (int i = 0; i < N; i++)
 {
-    sum = a1+a2;
-    a1=a2;
-    a2=sum;
+    sum = a1 + a2;
+    a1 = a2;
+    a2 = sum;
     Console.Write(sum + " ");
 }

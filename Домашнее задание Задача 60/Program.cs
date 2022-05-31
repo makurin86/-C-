@@ -10,7 +10,7 @@ Console.WriteLine("Введите число слоёв (Z)");
 int Z = int.Parse(Console.ReadLine()); //Слои
 //int A = 0; //Числа массива начинаются от
 //int B = 10; // Числа массива заканчиваются
-int[,,]mass = new int[X,Y,Z]; 
+int[,,] mass = new int[X, Y, Z];
 
 /* void FillArray( int [,,]mass)
 {
@@ -26,31 +26,35 @@ int[,,]mass = new int[X,Y,Z];
     }
    
 }}} */
-void Print(int [,,] mass)
+void Print(int[,,] mass)
 {
     for (int x = 0; x < mass.GetLength(0); x++)
     {
         for (int y = 0; y < mass.GetLength(1); y++)
-    {
-        
-     for (int z = 0; z < mass.GetLength(2); z++)
-    {   
+        {
 
-        Console.Write($" {mass[x,y,z]} [{x},{y},{z}]");
+            for (int z = 0; z < mass.GetLength(2); z++)
+            {
+
+                Console.Write($" {mass[x, y, z]} [{x},{y},{z}]");
+            }
+            Console.WriteLine();
+        }
     }
-    Console.WriteLine();
-}}}
+}
 
 int count = 0;
 for (int x = 0; x < mass.GetLength(0); x++) //Заполнение массива по порядку, начиная с count  (так точно не повторится)
-    {
+{
     for (int y = 0; y < mass.GetLength(1); y++)
     {
         for (int z = 0; z < mass.GetLength(2); z++)
         {
             mass[x, y, z] = count;
             count++;
-        }}}
+        }
+    }
+}
 
 Print(mass);
 

@@ -1,7 +1,7 @@
 ﻿/* Задача 58: Задайте две матрицы. Напишите программу, которая будет
 находить произведение двух матриц.
  */
- 
+
 Console.WriteLine("Введите число строк матрицы А");
 int m1 = int.Parse(Console.ReadLine()); //Строки
 Console.WriteLine("Введите число строк матрицы А");
@@ -14,28 +14,30 @@ int m2 = int.Parse(Console.ReadLine()); //Столбцы
 int A = 0; //Числа массива начинаются от
 int B = 10; // Числа массива заканчиваются
 
-void FillArray( int [,]mass)
+void FillArray(int[,] mass)
 {
-    
+
     for (int i = 0; i < mass.GetLength(0); i++)
     {
-     for (int j = 0; j < mass.GetLength(1); j++)
-    {   
-        mass[i,j] = new Random().Next(A, B);
+        for (int j = 0; j < mass.GetLength(1); j++)
+        {
+            mass[i, j] = new Random().Next(A, B);
+        }
+
     }
-   
-}}
-void Print(int [,] mass)
+}
+void Print(int[,] mass)
 {
     for (int i = 0; i < mass.GetLength(0); i++)
     {
         for (int j = 0; j < mass.GetLength(1); j++)
-    {
+        {
 
-        Console.Write(mass[i,j] + "  ");
+            Console.Write(mass[i, j] + "  ");
+        }
+        Console.WriteLine();
     }
-    Console.WriteLine();
-}}
+}
 
 int[,] mass = new int[m1, n1];
 int[,] mass2 = new int[m2, n2];
@@ -61,8 +63,8 @@ else
         {
             for (int k = 0; k < mass.GetLength(1); k++) //Проходит по стобцам первого массива
             {
-                mass3[i,j] += mass[i, k] * mass2[k, j]; //Итоговому массиву присваивается значение суммы произведений массивов по индексу k
-            //НЕУЖЕЛИ ЗАРАБОТАЛО!!!!!!!ааааааааааа
+                mass3[i, j] += mass[i, k] * mass2[k, j]; //Итоговому массиву присваивается значение суммы произведений массивов по индексу k
+                                                         //НЕУЖЕЛИ ЗАРАБОТАЛО!!!!!!!ааааааааааа
             }
         }
     }

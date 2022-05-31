@@ -4,23 +4,23 @@
 
 void Print(int[] array)
 {
-    for (int i=0; i<array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
-int[]mass = new int[4];
+int[] mass = new int[4];
 
-for (int i=0; i<mass.Length; i++)
+for (int i = 0; i < mass.Length; i++)
 {
-    mass[i] = new Random().Next(-100,100);
+    mass[i] = new Random().Next(-100, 100);
 }
 Print(mass);
 
 for (int i = 0; i < mass.Length; i++)
 {
     mass[i] = -mass[i];
- }
+}
 //Console.WriteLine();
 Print(mass);

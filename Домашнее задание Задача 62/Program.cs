@@ -24,9 +24,9 @@ for (j = 0; j < 4; j++) //1
     count++;
 }
 
-j = 3; 
+j = 3;
 
-for (i = i+1; i < 4; i++) //2
+for (i = i + 1; i < 4; i++) //2
 {
     mass[i, j] = count + 1;
     count++;
@@ -64,7 +64,7 @@ for (j = 2; j > 0; j--)//6
     count++;
 }
 
-i=i++;
+i = i++;
 
 
 Print(mass);

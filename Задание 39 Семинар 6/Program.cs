@@ -5,21 +5,21 @@
 int[] mass = new int[10];
 for (int i = 0; i < mass.Length; i++)
 {
-    mass[i] = new Random().Next(1,100);
+    mass[i] = new Random().Next(1, 100);
 }
 for (int i = 0; i < mass.Length; i++)
 {
-    Console.Write( mass[i]+ " ");
-    }
+    Console.Write(mass[i] + " ");
+}
 Console.WriteLine();
-for (int i = 0; i < mass.Length/2; i++)
+for (int i = 0; i < mass.Length / 2; i++)
 {
     int save = mass[i];
-    mass[i]=mass[mass.Length-1-i];
-    mass[mass.Length-1-i]=save;
+    mass[i] = mass[mass.Length - 1 - i];
+    mass[mass.Length - 1 - i] = save;
 }
 for (int i = 0; i < mass.Length; i++)
 {
-    Console.Write(mass[i]+" ");
+    Console.Write(mass[i] + " ");
 }
 Console.WriteLine();

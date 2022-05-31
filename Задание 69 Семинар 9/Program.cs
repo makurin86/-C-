@@ -6,15 +6,15 @@ A = 2; B = 3 -> 8 */
 int Rec(int A, int B)
 {
     Console.WriteLine($"{A}^{B}");
-    if(B==0)
- {
-    return 1;
+    if (B == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return A * Rec(A, B - 1);
+
+    }
 }
-else
-{
-    return A* Rec(A , B-1);
-    
-}
-}
-int save = Rec(3,5);
+int save = Rec(3, 5);
 Console.WriteLine(save);

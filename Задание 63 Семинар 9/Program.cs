@@ -5,11 +5,11 @@ N = 6 -> "1, 2, 3, 4, 5, 6" */
 
 void Rec(int N, int n)
 {
-    if(n>N)
+    if (n > N)
     {
         return;
     }
-    Console.Write(n+ " ");
-    Rec(N, n+1);
+    Console.Write(n + " ");
+    Rec(N, n + 1);
 }
-Rec(5,1);
+Rec(5, 1);

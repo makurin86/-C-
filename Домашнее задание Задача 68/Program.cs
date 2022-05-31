@@ -11,15 +11,15 @@ Console.WriteLine();
 
 int Rec(int m, int n)
 {
-                if (m == 0) 
-                return n + 1;
+    if (m == 0)
+        return n + 1;
 
-                if (m != 0 && n == 0) 
-                return Rec(m - 1, 1);
+    if (m != 0 && n == 0)
+        return Rec(m - 1, 1);
 
-                if (m > 0 && n > 0) 
-                return Rec(m - 1, Rec(m, n - 1));
-                return Rec(m,n);
-            }
-int save = Rec(m,n);
+    if (m > 0 && n > 0)
+        return Rec(m - 1, Rec(m, n - 1));
+    return Rec(m, n);
+}
+int save = Rec(m, n);
 Console.WriteLine(save);

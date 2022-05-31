@@ -16,23 +16,24 @@ double b2 = double.Parse(Console.ReadLine());
 Console.Write("k2 = ");
 double k2 = double.Parse(Console.ReadLine());
 
-      if ((k1 - k2) == 0 & (b1-b2)==0)
-        {
-            Console.WriteLine("Прямые совпадают");
-        } 
-        else
-        {
-        if ((k1 - k2) == 0)
-        {
-            Console.WriteLine("Прямые параллельны");
-        } 
-        
+if ((k1 - k2) == 0 & (b1 - b2) == 0)
+{
+    Console.WriteLine("Прямые совпадают");
+}
+else
+{
+    if ((k1 - k2) == 0)
+    {
+        Console.WriteLine("Прямые параллельны");
+    }
 
- else{
- double x =(b2-b1)/(k1-k2);
-  double y1 = k1*x+b1;
- double y2 = k2*x+b2;
-    Console.WriteLine($"Координаты точки пересечения прямых линий: x={Math.Round(x,2)}, y1={Math.Round(y1,2)}, Проверка: y2={Math.Round(y2,2) } ");
-           
- }
-        }
+
+    else
+    {
+        double x = (b2 - b1) / (k1 - k2);
+        double y1 = k1 * x + b1;
+        double y2 = k2 * x + b2;
+        Console.WriteLine($"Координаты точки пересечения прямых линий: x={Math.Round(x, 2)}, y1={Math.Round(y1, 2)}, Проверка: y2={Math.Round(y2, 2)} ");
+
+    }
+}

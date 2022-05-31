@@ -8,11 +8,11 @@ Console.WriteLine("Введите десятичное число ");
 int a = int.Parse(Console.ReadLine());
 
 string j = string.Empty;
-while (a>0)
+while (a > 0)
 {
-    j = a%2+j;
-    a=a/2;
-    
+    j = a % 2 + j;
+    a = a / 2;
+
 }
 
 Console.WriteLine(j);

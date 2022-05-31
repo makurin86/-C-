@@ -13,7 +13,7 @@ int[] FillArray(int size, int A, int B)
     }
     return array;
 }
-void Print(int [] array)
+void Print(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -21,10 +21,10 @@ void Print(int [] array)
     }
     Console.WriteLine();
 }
-int[]mass = FillArray(10, 1, 100);
+int[] mass = FillArray(10, 1, 100);
 
 Print(mass);
-int[]mass2 = new int[mass.Length];
+int[] mass2 = new int[mass.Length];
 for (int i = 0; i < mass2.Length; i++)
 {
     mass2[i] = mass[i];

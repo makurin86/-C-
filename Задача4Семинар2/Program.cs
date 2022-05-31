@@ -5,7 +5,7 @@ Console.WriteLine("Введите число для проверки его кр
 int num1 = int.Parse(Console.ReadLine());
 //Console.WriteLine(num);
 
-if (num1%7==0 & num1%23==0)
+if (num1 % 7 == 0 & num1 % 23 == 0)
 {
     Console.WriteLine($"Число {num1} кратно числу 7 и 23");
 }

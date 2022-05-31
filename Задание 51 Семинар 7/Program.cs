@@ -8,14 +8,14 @@
 int m = 4;
 int n = 4;
 int summ = 0;
-int[,]mass = new int[n,m];
+int[,] mass = new int[n, m];
 
 
 for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        mass[i,j] = new Random().Next(-10,10);
+        mass[i, j] = new Random().Next(-10, 10);
     }
     Console.WriteLine();
 }
@@ -24,7 +24,7 @@ for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        Console.Write(mass[i,j]+ "  ");
+        Console.Write(mass[i, j] + "  ");
     }
     Console.WriteLine();
 }
@@ -33,12 +33,12 @@ for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        if (i ==j )
+        if (i == j)
         {
-            summ = summ+mass[i,j];
+            summ = summ + mass[i, j];
         }
     }
-    
+
 }
 Console.WriteLine(summ);
 

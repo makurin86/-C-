@@ -6,7 +6,7 @@
 Console.WriteLine("Введите число:");
 int numA = int.Parse(Console.ReadLine());
 
-if (numA%2==0)
+if (numA % 2 == 0)
 {
     Console.Write("Введенное число - четное");
 }
